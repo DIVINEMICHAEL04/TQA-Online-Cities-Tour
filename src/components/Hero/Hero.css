@@ -1,107 +1,106 @@
-.hero {
-    position: relative;
-    width: 100%;
-    border-radius: 6px;
-    padding: 100px 0 80px;
-    padding-bottom: 0;
-}
-
-.typewriter-title {
-    background: linear-gradient(to left, #D79F3A 50%, #FFFFFF 50%, #D79F3A 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: 4rem;
-    font-weight: 800;
-}
-
-.react-type-animation-cursor {
-    animation: blinkCursor 0.8s step-end infinite;
-}
-
-.typewriter-title::after {
-    color: #D79F3A;
-}
-
-[class*="index-module_type"]::after {
-    color: #D79F3A;
-    font-weight: bold;
-    animation: blinkCursor 0.8s infinite;
-}
-
-@keyframes blinkCursor {
-    0%,
-    49% {
-        opacity: 1;
+    .hero {
+        position: relative;
+        width: 100%;
+        border-radius: 6px;
+        padding: 100px 0 80px;
+        padding-bottom: 0;
     }
-    50%,
-    100% {
-        opacity: 0;
-    }
-}
-
-[class*="index-module_type"]::after {
-    color: #D79F3A;
-    -webkit-text-fill-color: #FFFFFF;
-}
-
-.hero-content h1 {
-    color: black;
-    text-align: center;
-    color: #01172A;
-    font-family: "Raleway", sans-serif;
-    font-size: 5.5em;
-}
-
-.hero-image {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    opacity: 10%;
-    object-position: top;
-    /* display: block; */
-    background-color: #01172A;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.hero-content {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-    color: white;
-}
-
-.hero-subtitle {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: -14%;
-}
-
-.hero-subtitle p {
-    font-family: "Manrope", sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    color: #ffffff !important;
-}
-
-@media screen and (max-width: 768px) {
+    
     .typewriter-title {
-        font-size: 3.2em !important;
+        background: linear-gradient(to left, #D79F3A 50%, #FFFFFF 50%, #D79F3A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 4rem;
+        font-weight: 800;
     }
-    .hero-subtitle p {
-        font-size: 1.5em;
+    
+    .react-type-animation-cursor {
+        animation: blinkCursor 0.8s step-end infinite;
     }
+    
+    .typewriter-title::after {
+        color: #D79F3A;
+    }
+    
+    [class*="index-module_type"]::after {
+        color: #D79F3A;
+        font-weight: bold;
+        animation: blinkCursor 0.8s infinite;
+    }
+    
+    @keyframes blinkCursor {
+        0%,
+        49% {
+            opacity: 1;
+        }
+        50%,
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    [class*="index-module_type"]::after {
+        color: #D79F3A;
+        -webkit-text-fill-color: #FFFFFF;
+    }
+    
+    .hero-content h1 {
+        color: black;
+        text-align: center;
+        color: #01172A;
+        font-family: "Raleway", sans-serif;
+        font-size: 5.5em;
+    }
+    
+    .hero-image {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        opacity: 10%;
+        object-position: top;
+        background-color: #01172A;
+    }
+    
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .hero-content {
         position: absolute;
-        top: 60%;
+        display: flex;
+        flex-direction: column;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        color: white;
     }
-}
+    
+    .hero-subtitle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: -14%;
+    }
+    
+    .hero-subtitle p {
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        color: #ffffff !important;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .typewriter-title {
+            font-size: 3.2em !important;
+        }
+        .hero-subtitle p {
+            font-size: 1.5em;
+        }
+        .hero-content {
+            position: absolute;
+            top: 60%;
+        }
+    }

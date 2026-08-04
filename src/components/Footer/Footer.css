@@ -1,0 +1,174 @@
+.footer {
+    margin-top: 5px;
+    border-top: 2px solid rgba(139, 139, 139, 0.731);
+    border-bottom: 2px solid rgba(139, 139, 139, 0.731);
+    border-radius: 6px;
+    width: 100%;
+    padding: 20px;
+}
+
+.tqa-wa-channel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.wa-channel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.channel-box {
+    padding: 8px 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.channel-box p {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000 !important;
+    text-align: center;
+    line-height: 1.4;
+}
+
+#channel-icon {
+    font-size: 30px;
+    /* background-color: #43c232 !important; */
+    color: #ffffff !important;
+}
+
+.wa-channel-icon {
+    background-color: #43c232 !important;
+}
+
+.tqa-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info p {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff !important;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.copyright p {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #ffffff !important;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba(18, 18, 18, 0.08);
+    align-items: center;
+    cursor: pointer;
+    background-color: #e2e2e2;
+}
+
+.fab {
+    font-size: 30px;
+}
+
+.fa-whatsapp {
+    color: #43c232 !important;
+}
+
+.fa-youtube {
+    color: #ff0000 !important;
+}
+
+.fa-instagram {
+    background: linear-gradient(120deg, #ffdc80, #fcaf45, #f77737, #f56040, #fd1d1d, #e1306c, #c13584, #833ab4, #5851db, #405de6);
+    border-radius: 50%;
+    /* height: 29px; */
+}
+
+.fa-linkedin {
+    color: #0A66C2 !important;
+}
+
+.fa-twitter {
+    color: #1DA1F2 !important;
+}
+
+.fa-facebook {
+    color: #1877F2 !important;
+}
+
+.fa-tiktok {
+    color: #000000!important;
+}
+
+@media screen and (max-width: 768px) {
+    .tqa-wa-channel {
+        flex-direction: column;
+        justify-content: start !important;
+        gap: 30px;
+    }
+    .tqa-logo {
+        width: 180px;
+    }
+    .wa-channel {
+        align-self: flex-start;
+    }
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .social-media {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start !important;
+    }
+    .copyright {
+        display: flex !important;
+        flex-direction: row;
+    }
+    .social-icon {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.hero,
+.about,
+.cities,
+.testimonials,
+footer {
+    scroll-margin-top: 120px;
+}

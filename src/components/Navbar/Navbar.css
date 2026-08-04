@@ -1,0 +1,132 @@
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            nav {
+                width: 100%;
+                max-width: 99%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 16px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                /* Glassmorphism */
+                background: rgba(15, 15, 15, 0.45);
+                backdrop-filter: blur(18px);
+                -webkit-backdrop-filter: blur(18px);
+                border-top: 1px solid rgba(255, 255, 255, 0.08);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+                margin: 7px;
+                margin-bottom: 15px;
+                border-radius: 8px;
+            }
+            
+            .logo-container {
+                display: flex;
+                align-items: center;
+                padding-left: 12px;
+                padding-bottom: 8px;
+            }
+            
+            .tqa-logo {
+                width: 200px;
+                height: auto;
+            }
+            
+            .nav-links ul {
+                padding-right: 22px;
+                display: flex;
+                gap: 22px;
+                align-items: center;
+            }
+            
+            li {
+                list-style: none;
+            }
+            
+            a {
+                text-decoration: none;
+                color: #FFFFFF;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: "Manrope", sans-serif;
+            }
+            
+            a:hover {
+                color: #d4d5d6;
+            }
+            
+            button img {
+                display: none;
+            }
+            
+            .menu-btn {
+                display: none;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 28px;
+                cursor: pointer;
+                z-index: 1200;
+            }
+            
+            .menu-btn img {
+                width: 28px;
+                height: 28px;
+            }
+            /* Media Screen */
+            
+            @media (max-width: 768px) {
+                nav {
+                    padding: 16px 20px;
+                    justify-content: space-between;
+                    align-items: center;
+                    /* height: 100vh; */
+                }
+                .tqa-logo {
+                    width: 150px;
+                }
+                /* Show hamburger button only on mobile */
+                .menu-btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                /* Hide menu off-screen */
+                .nav-links {
+                    position: fixed;
+                    top: 0;
+                    right: -100%;
+                    width: 75%;
+                    max-width: 320px;
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: rgba(2, 24, 43, 0.95);
+                    backdrop-filter: blur(18px);
+                    -webkit-backdrop-filter: blur(18px);
+                    transition: right .35s ease;
+                    z-index: 1100;
+                }
+                /* Slide in */
+                .nav-links.active {
+                    right: 0;
+                }
+                .nav-links ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 35px;
+                    padding: 0;
+                }
+                .nav-links a {
+                    color: #FFFFFF;
+                    font-size: 20px;
+                }
+            }

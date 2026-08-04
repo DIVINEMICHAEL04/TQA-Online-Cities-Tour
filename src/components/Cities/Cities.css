@@ -1,0 +1,197 @@
+.cities {
+    width: 100%;
+    padding: 80px 0;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+}
+
+.schedule-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.schedule-content h2 {
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    color: #ffffff !important;
+}
+
+.schedule-content p {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff !important;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Fade edges */
+
+.carousel-wrapper::before,
+.carousel-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.carousel-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, #000, transparent);
+}
+
+.carousel-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, #000, transparent);
+}
+
+
+/* Carousel */
+
+.image-carousel {
+    display: flex;
+    gap: 28px;
+    width: max-content;
+    animation: slideRight 60s linear infinite;
+}
+
+.image-carousel:hover {
+    animation-play-state: paused;
+}
+
+
+/* Card */
+
+.host-card {
+    position: relative;
+    width: 290px;
+    height: 430px;
+    border-radius: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.host-card:hover {
+    transform: translateY(-8px);
+}
+
+.host-img,
+.host-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.host-img img {
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.host-card:hover img {
+    transform: scale(1.08);
+}
+
+
+/* ======================= */
+
+
+/* Info Bar */
+
+
+/* ======================= */
+
+.host-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    color: white;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    background: rgba(0, 0, 0, .45);
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    transition: .45s ease;
+}
+
+.host-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+    font-family: "Manrope";
+    font-weight: 600;
+}
+
+.host-info h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #D4AF37;
+    font-size: .95rem;
+    margin-bottom: 0;
+}
+
+
+/* Hidden content */
+
+.host-details {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .45s ease;
+    margin-top: 0;
+}
+
+.host-card:hover .host-details {
+    max-height: 180px;
+    opacity: 1;
+    margin-top: 18px;
+}
+
+.host-details p {
+    font-family: "Manrope", sans-serif;
+    font-size: .92rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.host-details span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .85rem;
+    color: #e5e5e5;
+}
+
+
+/* Animation */
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-66.66%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cities {
+        padding: 40px 0;
+    }
+    .schedule-content h2 {
+        font-size: 2em;
+    }
+    .schedule-content p {
+        font-size: 16px;
+    }
+}

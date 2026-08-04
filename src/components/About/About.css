@@ -1,0 +1,136 @@
+.about {
+    padding-top: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    /* background-color: #d92727; */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.about-description {
+    width: 100%;
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #ffffff !important;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.about-text {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.tqa-text {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+    transition: all 0.3s ease;
+}
+
+.tqa-text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+}
+
+.about-content h2 {
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    color: #ffffff !important;
+}
+
+.full-description {
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    color: #ffffff !important;
+    line-height: 1.5;
+    text-align: start;
+    padding-bottom: 8px;
+}
+
+.tqa-text ol {
+    list-style-type: decimal;
+}
+
+.about-list-item {
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #ffffff !important;
+    text-align: start;
+    line-height: 2;
+}
+
+.cta-quick-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.cta-quick-link p {
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #ffffff !important;
+    text-align: center;
+}
+
+.cta-btn {
+    background-color: #DAA425;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .about-content h2 {
+        font-size: 2em;
+    }
+    .break {
+        display: none;
+    }
+    .about-description {
+        font-size: 0.9em;
+    }
+    .about-text {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .full-description {
+        font-size: 0.8em;
+    }
+    .about-list-item {
+        font-size: 0.8em;
+    }
+    .cta-quick-link p {
+        font-size: 1em;
+    }
+    .cta-btn a {
+        font-size: 12px;
+    }
+}
